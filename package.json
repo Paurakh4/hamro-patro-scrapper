@@ -1,15 +1,55 @@
 {
-  "name": "hp-scarapper",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hamro-patro-scrapper",
+  "version": "2.0.0",
+  "description": "Modern TypeScript-based scraper for Hamro Patro (Nepali Calendar) with multiple export formats and CLI support",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "cli": "node dist/cli.js",
+    "scrape": "npm run cli scrape",
+    "convert": "npm run cli convert",
+    "validate": "npm run cli validate",
+    "example": "tsc && node dist/../examples/basic-usage.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "hamro-patro-scrapper": "dist/cli.js"
+  },
+  "keywords": [
+    "nepali-calendar",
+    "hamro-patro",
+    "scraper",
+    "typescript",
+    "cli",
+    "csv",
+    "excel",
+    "json"
+  ],
+  "author": "Hamro Patro Scrapper Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
-    "puppeteer": "^1.6.0"
+    "puppeteer": "^22.0.0",
+    "commander": "^11.1.0",
+    "cli-progress": "^3.12.0",
+    "csv-writer": "^1.6.0",
+    "exceljs": "^4.4.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0",
+    "@types/cli-progress": "^3.11.5",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "rimraf": "^5.0.5"
   }
 }
