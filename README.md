@@ -382,16 +382,11 @@ node dist/cli.js convert -i data.json -f excel
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-MIT License - see LICENSE file for details
-
 ## 🙏 Acknowledgments
 
-- **Hamro Patro**: For providing the calendar data
-- **Original Contributors**: For the initial implementation
+- **Original Contributors**: [@samundrak](https://github.com/samundrak) For the initial implementation
 - **Community**: For feedback and suggestions
 
 ---
 
-**Note**: This scraper is for educational and personal use. Please be respectful to the Hamro Patro website and follow their terms of service.
+**Note**: This scraper is for educational purposes only. Please be respectful to the Hamro Patro website and follow their terms of service.
